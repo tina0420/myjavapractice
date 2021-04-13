@@ -6,6 +6,17 @@ package tqcQuestion;
 //請各產生一Apple, Banana, Pudding之物件，並印出它們的cost及 price。
 
 public class IcePrice603 {	
+	
+	public static void main(String[] args) {
+		Apple apple = new Apple();	
+		Banana banana = new Banana();   
+		Mango mango = new Mango();       
+		System.out.println("Apple's cost :" + apple.getCost());
+		System.out.println("Apple's price :" + apple.getPrice());
+		System.out.println("Mango's cost :" + mango.getCost());
+		System.out.println("Mango's price :" + mango.getPrice());
+	}
+	
 	class thing {
 		double cost;
 		double price;
@@ -48,17 +59,4 @@ public class IcePrice603 {
 			super(2.0,5.0);
 		}
 	}
-	public static void main(String[] args) {
-		IcePrice603 things = new IcePrice603();
-		Apple apple = things.new Apple();
-		Banana banana = things.new Banana();
-//		Banana banana = new Banana();    這會出錯
-		Mango mango = things.new Mango();
-//		Mango mango = new Mango();       這會出錯
-		System.out.println("Apple's cost :" + apple.getCost());
-		System.out.println("Apple's price :" + apple.getPrice());
-		System.out.println("Mango's cost :" + mango.getCost());
-		System.out.println("Mango's price :" + mango.getPrice());
-	}
-	
 }
